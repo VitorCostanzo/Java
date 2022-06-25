@@ -1,7 +1,6 @@
 package app;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,8 +10,7 @@ import java.util.Random;
 
 public class Button {
     /**variáveis usadas em diferentes métodos**/
-    private static List<JButton> button = new ArrayList<>();/**Lista de botões**/
-    private static List<String> checked = new ArrayList<>();/**Lista que receberá os nomes dos botões descobertos**/
+    private static List<JButton> button = new ArrayList<>();/**Lista que receberá os nomes dos botões descobertos**/
     private static Random rdm = new Random();/**para randomizar os nomes dos botões**/
     private static String clickname1;/**salvará temporariamente o nome do botão apertado para comparação**/
     private static String clickname2;
