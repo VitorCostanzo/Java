@@ -63,11 +63,11 @@ public class Button {
                         if (error == 1){
                             congrats.setText("Você finalizou com 1 erro !");
                         }
-                        congrats.setBounds(70, 30, 200, 50);
+                        congrats.setBounds(40, 30, 250, 50);
                         congrats.setForeground(Color.WHITE);
 
                         JButton end = new JButton("Fechar");
-                        end.setBounds(90, 100, 100, 35);
+                        end.setBounds(100, 100, 100, 35);
                         end.setBackground(Color.lightGray);
                         end.setCursor(new Cursor(Cursor.HAND_CURSOR));
                         end.addActionListener(new ActionListener() {
@@ -80,7 +80,7 @@ public class Button {
                         JFrame finish = new JFrame("Fim deJogo !");
                         finish.setLayout(null);
                         finish.setSize(300, 200);
-                        finish.setLocationRelativeTo(null);
+                        finish.setLocationRelativeTo(App.memory);
                         finish.setResizable(false);
                         finish.getContentPane().setBackground(Color.BLACK);
                         finish.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -88,7 +88,7 @@ public class Button {
                         finish.add(end);
                         finish.setVisible(true);
 
-                        App.memory.setEnabled(false);
+                        App.memory.dispose();
                     }
                     clickname1 = "";
                     clickname2 = "";
@@ -174,13 +174,13 @@ public class Button {
         for (int i = 0; i < 16; i++){
             JButton current = new JButton();
             if (i < 4){
-                current.setBounds((100 * i + 10), 10, 90, 90);
+                current.setBounds((100 * i + 17), 20, 90, 90);
             } else if (i < 8){
-                current.setBounds((100 * (i - 4) + 10), 120, 90, 90);
+                current.setBounds((100 * (i - 4) + 17), 120, 90, 90);
             } else if (i < 12) {
-                current.setBounds((100 * (i - 8) + 10), 230, 90, 90);
+                current.setBounds((100 * (i - 8) + 17), 220, 90, 90);
             } else {
-                current.setBounds((100 * (i - 12) + 10), 340, 90, 90);
+                current.setBounds((100 * (i - 12) + 17), 320, 90, 90);
             }
             current.setCursor(new Cursor(Cursor.HAND_CURSOR));
             current.setBorder(BorderFactory.createBevelBorder(0));
