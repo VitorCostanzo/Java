@@ -6,7 +6,7 @@ public class ClassePrintWriter {
 
 	public static void main(String[] args) {
 		
-		try(PrintWriter pw = new PrintWriter("ArqPrintWriter.txt")){
+		try(PrintWriter pw = new PrintWriter("Arquivo.txt")){
 			pw.println("Novo");
 			pw.println("arquivo");
 			pw.println("Autocloseable");

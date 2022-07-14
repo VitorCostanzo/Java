@@ -33,7 +33,7 @@ public class LerTecladoEscreverArquivo{
 		br.close();
 		
 		
-		OutputStream os2 = new FileOutputStream("LerTecEscArq.txt");
+		OutputStream os2 = new FileOutputStream("Arquivo.txt");
 		OutputStreamWriter osw2 = new OutputStreamWriter(os2);
 		BufferedWriter bw2 = new BufferedWriter(osw2);
 		

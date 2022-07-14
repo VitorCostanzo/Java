@@ -39,7 +39,7 @@ public class AutocloseableIOS {
 			e.printStackTrace();
 		}
 
-		try (FileWriter fw = new FileWriter("ArqFileWriter.txt")) {
+		try (FileWriter fw = new FileWriter("Arquivo.txt")) {
 			fw.write("Arquivo");
 			fw.write(System.lineSeparator());
 			fw.write("Sobrescrito");
@@ -47,14 +47,14 @@ public class AutocloseableIOS {
 			e.printStackTrace();
 		}
 
-		try (PrintStream ps = new PrintStream("ArqPrintStream.txt")){
+		try (PrintStream ps = new PrintStream("Arquivo.txt")){
 			ps.println("Arquivo");
 			ps.println("Sobrescrito!");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		try (PrintWriter pw = new PrintWriter("ArqPrintWriter.txt")){
+		try (PrintWriter pw = new PrintWriter("Arquivo.txt")){
 			pw.println("Arquivo");
 			pw.println("Sobrescrito");
 		} catch (Exception e) {
