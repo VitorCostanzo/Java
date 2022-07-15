@@ -16,7 +16,7 @@ public class LerEscreverArquivo {
 		// Readers -> leem as entradas input e transformam em caracteres/strings/imagens
 
 		// Fluxo de entrada com Arquivo // -> Padrão Decorator
-		FileInputStream fis = new FileInputStream("Arquivo.txt"); // Recebe o binario do arquivo
+		FileInputStream fis = new FileInputStream("Arquivos/Arquivo.txt"); // Recebe o binario do arquivo
 		InputStreamReader isr = new InputStreamReader(fis); // lê o binario e transforma em caracteres
 		BufferedReader br = new BufferedReader(isr); // Buffer para guardar os caracteres em linha
 
@@ -30,7 +30,7 @@ public class LerEscreverArquivo {
 
 		
 		// Fluxo de saida // -> Padrão Decorator
-		FileOutputStream fos = new FileOutputStream("Arquivo.txt");
+		FileOutputStream fos = new FileOutputStream("Arquivos/Arquivo.txt");
 		OutputStreamWriter osw = new OutputStreamWriter(fos);
 		BufferedWriter bw = new BufferedWriter(osw);
 		

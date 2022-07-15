@@ -12,7 +12,7 @@ public class ClasseScanner {
 
 		ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
 
-		try (Scanner scanner = new Scanner(new File("pessoas.csv"))) { // escaneia o documento
+		try (Scanner scanner = new Scanner(new File("Arquivos/pessoas.csv"))) { // escaneia o documento
 
 			while (scanner.hasNextLine()) {
 				String linha = scanner.nextLine(); // pega a proxima linha do documento

@@ -6,7 +6,7 @@ public class ClassePrintStream {
 
 	public static void main(String[] args) throws Exception{
 		
-		PrintStream ps = new PrintStream("Arquivo.txt");
+		PrintStream ps = new PrintStream("Arquivos/Arquivo.txt");
 		ps.println("Imprimindo");
 		ps.println("linha");
 		ps.println("por");

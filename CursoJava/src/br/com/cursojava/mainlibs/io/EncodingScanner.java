@@ -16,7 +16,7 @@ public class EncodingScanner {
 			entrada = scanner.nextLine();
 		}
 		
-		try (PrintWriter pw = new PrintWriter("Arquivo.txt", "ASCII")){
+		try (PrintWriter pw = new PrintWriter("Arquivos/Arquivo.txt", "ASCII")){
 			pw.println("Começo");
 			pw.println("arquivão");
 			pw.println("éééé");			

@@ -12,13 +12,13 @@ public class SerializacaoClassesJava {
 		
 		String nome = "Vitor Cordeiro Costanzo";
 		
-		try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objeto.bin"))){
+		try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Arquivos/objeto.bin"))){
 			oos.writeObject(nome);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objeto.bin"))){
+		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Arquivos/objeto.bin"))){
 			String nomelido = (String) ois.readObject();
 			System.out.println(nomelido);
 		} catch (Exception e) {

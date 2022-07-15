@@ -10,10 +10,11 @@ public class ClasseFileWriter {
 //		FileWriter fw = new FileWriter("ArqFileWriter.txt");
 //		BufferedWriter bw = new BufferedWriter(fw);
 // ou
-		BufferedWriter bw = new BufferedWriter(new FileWriter("Arquivo.txt"));
+		BufferedWriter bw = new BufferedWriter(new FileWriter("Arquivos/Arquivo.txt"));
 		
 		bw.write("String");
 		bw.newLine(); // ou bw.write(System.lineSeparator());
+		bw.write("do arquivo !!!");
 		bw.write("do arquivo !!!");
 		bw.close();
 		

@@ -3,6 +3,11 @@ br.com.cursojava.auxiliar
 br.com.cursojava.basico
 br.com.cursojava.enums
 br.com.cursojava.excecoes
+br.com.cursojava.layouts
+br.com.cursojava.mainlibs.io
+br.com.cursojava.mainlibs.io.properties
+br.com.cursojava.mainlibs.lang
+br.com.cursojava.mainlibs.util
 br.com.cursojava.oop
 br.com.cursojava.oop.filhos
 br.com.cursojava.oop.interfaces

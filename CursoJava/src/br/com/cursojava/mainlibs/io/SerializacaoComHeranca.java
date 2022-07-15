@@ -12,14 +12,14 @@ public class SerializacaoComHeranca {
 		
 		Aguia careca = new Aguia("Aguia careca", "EUA");
 		
-		try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objeto.bin"))){
+		try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Arquivos/objeto.bin"))){
 			oos.writeObject(careca);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
 		
-		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objeto.bin"))){
+		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Arquivos/objeto.bin"))){
 			Aguia recebido = (Aguia) ois.readObject();
 			System.out.println(recebido.especie);
 			System.out.println(recebido.regiao);

@@ -11,10 +11,10 @@ public class ClasseBase64 {
 	
 	public static void main(String[] args) throws Exception{
 		
-		String imagem64 = encode64("dwight.jpg");
+		String imagem64 = encode64("Arquivos/dwight.jpg");
 		System.out.println(imagem64);
 		
-		try (FileOutputStream fos = new FileOutputStream(new File("dwightcopy.jpg"))){
+		try (FileOutputStream fos = new FileOutputStream(new File("Arquivos/dwightcopy.jpg"))){
 			fos.write(decode64(imagem64));
 		}
 		

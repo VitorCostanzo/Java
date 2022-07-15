@@ -12,13 +12,13 @@ public class SerializacaoClassesProprias {
 		
 		Individuo vitor = new Individuo("Vitor", 26, "Desenvolvedor", 1.83, 97);
 		
-		try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objeto.bin"))){
+		try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Arquivos/objeto.bin"))){
 			oos.writeObject(vitor);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objeto.bin"))){
+		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Arquivos/objeto.bin"))){
 			Individuo recebido = (Individuo) ois.readObject();
 			System.out.println(recebido);
 		} catch (Exception e) {
