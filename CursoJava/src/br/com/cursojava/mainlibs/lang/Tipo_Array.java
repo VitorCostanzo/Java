@@ -4,7 +4,7 @@ import java.util.Date;
 
 import br.com.cursojava.oop.filhos.ContaCorrente;
 
-public class ClasseArray {
+public class Tipo_Array {
 
 	public static void main(String[] args) {
 		

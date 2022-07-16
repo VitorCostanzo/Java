@@ -1,6 +1,6 @@
 package br.com.cursojava.mainlibs.lang;
 
-public class ClasseStringBuilder {
+public class Classe_StringBuilder {
 
 	public static void main(String[] args) {
 

@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
-public class LerEscreverArquivo {
+public class Ler_Escrever_Arquivo {
 
 	public static void main(String[] args) throws Exception {
 

@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class SerializacaoClassesJava {
+public class Serializacao_Classes_Java {
 // transformar o objeto na memoria em um fluxo de bits e bytes
 
 	public static void main(String[] args) {

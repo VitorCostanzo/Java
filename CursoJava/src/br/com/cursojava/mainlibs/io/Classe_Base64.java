@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Base64;
 
-public class ClasseBase64 {
+public class Classe_Base64 {
 
 	
 	public static void main(String[] args) throws Exception{

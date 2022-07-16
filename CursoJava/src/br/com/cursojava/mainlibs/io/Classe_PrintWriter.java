@@ -2,7 +2,7 @@ package br.com.cursojava.mainlibs.io;
 
 import java.io.PrintWriter;
 
-public class ClassePrintWriter {
+public class Classe_PrintWriter {
 
 	public static void main(String[] args) {
 		

@@ -2,7 +2,7 @@ package br.com.cursojava.mainlibs.io;
 
 import java.io.PrintStream;
 
-public class ClassePrintStream {
+public class Classe_PrintStream {
 
 	public static void main(String[] args) throws Exception{
 		

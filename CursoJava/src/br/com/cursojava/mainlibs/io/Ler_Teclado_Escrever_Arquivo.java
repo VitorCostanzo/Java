@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
-public class LerTecladoEscreverArquivo{
+public class Ler_Teclado_Escrever_Arquivo{
 
 	public static void main(String[] args) throws Exception{
 		

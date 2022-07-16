@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class SerializacaoClassesProprias {
+public class Serializacao_Classes_Proprias {
 
 	public static void main(String[] args) {
 		

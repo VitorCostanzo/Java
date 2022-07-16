@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Properties;
 
-public class CriarLerProperties {
+public class Criar_Ler_Properties {
 
 	public static void main(String[] args) {
 		

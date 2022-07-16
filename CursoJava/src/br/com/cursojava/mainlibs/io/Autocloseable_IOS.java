@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 
-public class AutocloseableIOS {
+public class Autocloseable_IOS {
 
 	public static void main(String[] args) {
 

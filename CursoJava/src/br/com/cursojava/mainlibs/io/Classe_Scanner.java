@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ClasseScanner {
+public class Classe_Scanner {
 
 	public static void main(String[] args) {
 

@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class SerializacaoComHeranca {
+public class Serializacao_Com_Heranca {
 
 	public static void main(String[] args) {
 		

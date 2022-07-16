@@ -2,7 +2,7 @@ package br.com.cursojava.mainlibs.lang;
 
 import java.util.ArrayList;
 
-public class ClassesNumericas {
+public class Classes_Numericas {
 
 	public static void main(String[] args) {
 		

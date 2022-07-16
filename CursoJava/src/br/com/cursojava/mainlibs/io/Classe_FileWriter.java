@@ -3,7 +3,7 @@ package br.com.cursojava.mainlibs.io;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
-public class ClasseFileWriter {
+public class Classe_FileWriter {
 
 	public static void main(String[] args) throws Exception{
 

@@ -4,7 +4,7 @@ import br.com.cursojava.oop.filhos.ContaCorrente;
 import br.com.cursojava.oop.filhos.ContaPoupanca;
 
 // Tudas as classes herdam Object automaticamente
-public class ClasseObject {
+public class Classe_Object {
 
 	public static void main(String[] args) {
 		

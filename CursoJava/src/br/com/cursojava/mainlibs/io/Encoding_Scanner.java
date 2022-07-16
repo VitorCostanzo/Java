@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
-public class EncodingScanner {
+public class Encoding_Scanner {
 
 	public static void main(String[] args) throws Exception {
 		
