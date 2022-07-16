@@ -98,7 +98,6 @@ class Aula {
 	int duracao;
 
 	public Aula(String nome, int duracao) {
-		super();
 		this.nome = nome;
 		this.duracao = duracao;
 	}
