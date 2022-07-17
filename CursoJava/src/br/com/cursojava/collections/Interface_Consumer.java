@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class Classe_Consumer {
+public class Interface_Consumer {
 
 	private static List<NumerosInteiros> numeros;
 	
@@ -25,7 +25,12 @@ public class Classe_Consumer {
 		System.out.println();
 	
 		// Lambda Consumer enxuta p/ forEach
-		numeros.forEach((num) -> System.out.print(num.getValor() + " "));
+		numeros.forEach( num -> System.out.print(num.getValor() + " "));
+		System.out.println();
+		
+		// Lambdas podem ser consumers
+		Consumer<NumerosInteiros> consumer = n -> System.out.print(n.getValor() + " ");
+		numeros.forEach(consumer);
 	}
 }
 

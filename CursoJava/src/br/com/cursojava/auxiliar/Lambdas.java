@@ -1,64 +1,65 @@
 package br.com.cursojava.auxiliar;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 
 // Lambdas (->)
 
 public class Lambdas {
 
-	private static List<Meios> numeros;
-	
 	public static void main(String[] args) {
+
+		List<String> palavras = new ArrayList<>();
+		palavras.add("ovo");
+		palavras.add("palavra");
+		palavras.add("paralelepipedo");
+		palavras.add("oi");
+		palavras.add("interessante");
 		
-		numeros = new ArrayList<Meios>();
-		numeros.add(new Meios(4.5));
-		numeros.add(new Meios(7.5));
-		numeros.add(new Meios(1.5));
-		numeros.add(new Meios(9.5));
-		numeros.add(new Meios(0.5));
-		numeros.add(new Meios(3.5));
-		numeros.add(new Meios(6.5));
-		numeros.add(new Meios(2.5));
-		numeros.add(new Meios(5.5));
-		numeros.add(new Meios(8.5));
-		System.out.println(numeros);
-		
-		// Lambda
-		numeros.sort((Meios meio0, Meios meio1) -> {
-			return meio0.compareTo(meio1);
+		// foreach
+		palavras.forEach(new Consumer<String>() {
+			@Override
+			public void accept(String s) {
+				System.out.print(s + "   ");
+			}
 		});
-		System.out.println(numeros);
-		
-		// reembaralhando
-		Collections.shuffle(numeros);
-		System.out.println("\n" + numeros);
-		
-		// Lambda enxuta
-		numeros.sort((meio0, meio1) -> meio0.compareTo(meio1));
-		System.out.println(numeros);
-		
-	}
-	
-}
+		System.out.println();
+		// ou
+		palavras.forEach(p -> System.out.print(p + "   "));
+		// ou
+		System.out.println();
+		palavras.forEach(System.out::print); // method reference
+		System.out.println();
 
-class Meios implements Comparable<Meios> {
-	
-	Double valor;
-	
-	public Meios(Double valor) {
-		this.valor = valor;
+		
+		// sort
+		palavras.sort(new Comparator<String>() {
+			@Override
+			public int compare(String a, String b) {
+				return b.length() - a.length();
+			}
+		});
+		System.out.println(palavras);
+		// agora da menor para a maior
+		palavras.sort(Comparator.comparing(s -> s.length()));
+		// ou
+		palavras.sort(Comparator.comparing(String::length)); // method reference
+		System.out.println(palavras);
+		
+		
+		
+		// lambdas com runnables
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("Executando um runnable");
+			}
+		}).start();
+
+		new Thread(() -> System.out.println("Executando um runnable com lambda")).start();
+
 	}
 
-	@Override
-	public int compareTo(Meios arg0) {
-		return this.valor.compareTo(arg0.valor);
-	}
-	
-	@Override
-	public String toString() {
-		return this.valor.toString();
-	}
-	
 }

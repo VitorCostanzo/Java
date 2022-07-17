@@ -12,26 +12,27 @@ public class Comparator_e_Comparable {
 		pessoas.add(new Pessoa("Rosi", 55));
 		pessoas.add(new Pessoa("Lara", 13));
 		pessoas.add(new Pessoa("Caio", 28));
-		
-		// para ordenar a partir do collections, precisamos passar um comparable(interface)
+
+		// para ordenar a partir do collections, precisamos passar um
+		// comparable(interface)
 		Collections.sort(pessoas); // Collections.sort(Camparable)
 		// ou
 		Collections.sort(pessoas, Comparator.comparing(Pessoa::getIdade));
 		System.out.println("Do mais novo para o mais velho:");
 		pessoas.forEach(pessoa -> System.out.println(pessoa.nome));
-		
+
 		// pessoas.sort(Comparator)
 		pessoas.sort(new DoMaisVelho());
 		System.out.println("Do mais velho para o mais novo:");
 		pessoas.forEach(pessoa -> System.out.println(pessoa.nome));
-		
+
 		// pessoas.sort(null) -> utiliza o compareTo da Comparable Pessoa
 		pessoas.sort(null);
 		// ou
 		pessoas.sort(Comparator.comparing(Pessoa::getIdade));
 		System.out.println("Do mais novo para o mais velho denovo:");
 		pessoas.forEach(pessoa -> System.out.println(pessoa.nome));
-		
+
 	}
 }
 
@@ -49,17 +50,16 @@ class Pessoa implements Comparable<Pessoa> {
 	public int compareTo(Pessoa outra) {
 		return this.idade.compareTo(outra.idade);
 	}
-	
+
 	public Integer getIdade() {
 		return idade;
 	}
 
 }
 
-class DoMaisVelho implements Comparator<Pessoa>{
+class DoMaisVelho implements Comparator<Pessoa> {
 	@Override
 	public int compare(Pessoa p0, Pessoa p1) {
 		return p1.idade - p0.idade;
 	}
 }
-
