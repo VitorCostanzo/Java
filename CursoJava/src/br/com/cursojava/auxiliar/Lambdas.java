@@ -17,7 +17,7 @@ public class Lambdas {
 		palavras.add("paralelepipedo");
 		palavras.add("oi");
 		palavras.add("interessante");
-		
+
 		// foreach
 		palavras.forEach(new Consumer<String>() {
 			@Override
@@ -33,7 +33,6 @@ public class Lambdas {
 		palavras.forEach(System.out::print); // method reference
 		System.out.println();
 
-		
 		// sort
 		palavras.sort(new Comparator<String>() {
 			@Override
@@ -47,9 +46,7 @@ public class Lambdas {
 		// ou
 		palavras.sort(Comparator.comparing(String::length)); // method reference
 		System.out.println(palavras);
-		
-		
-		
+
 		// lambdas com runnables
 		new Thread(new Runnable() {
 			@Override
