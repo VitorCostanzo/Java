@@ -19,5 +19,10 @@ public class Interface_List {
 		// de array para lista
 		String[] nomes = { "Vitor", "Lara", "Rosi", "Zakk", "Ozzy", "Sansão" };
 		List<String> nomesLista = Arrays.asList(nomes);
+		
+		// Factory method para coleções
+		List<String> cordas = List.of("Mi", "Lá", "Ré", "Sol", "Si", "Mi");
+		cordas.forEach(c -> System.out.print(c));
+
 	}
 }

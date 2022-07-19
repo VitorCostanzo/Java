@@ -57,6 +57,13 @@ public class Lambdas {
 
 		new Thread(() -> System.out.println("Executando um runnable com lambda")).start();
 
+		
+		// switch/case com lambda
+		String nome = "Vitor";
+		switch (nome) {
+		case "Vitor" -> System.out.println("nome " + nome + " encontrado");
+		default -> 	throw new IllegalArgumentException("Unexpected value: " + nome);
+		}
 	}
 
 }

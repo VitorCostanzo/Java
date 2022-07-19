@@ -37,6 +37,14 @@ public class Classe_String {
 		// trim
 		System.out.println("Sem Trim: " + "    Vitor    ");
 		System.out.println("Com Trim: " + "    Vitor    ".trim());
+		
+		// """
+		String txt = """
+				SELECT * FROM
+				TABELA_USUARIOS WHERE
+				NOME LIKE "%VITOR%"
+				""";
+		System.out.println(txt);
 	}
 
 }
